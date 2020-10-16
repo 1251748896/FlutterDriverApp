@@ -6,21 +6,21 @@ import 'package:flutter/material.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(DriverApp());
 }
 
-class MyApp extends StatefulWidget {
+class DriverApp extends StatefulWidget {
   // This widget is the root of your application.
-  MyApp({Key key}) : super(key: key);
+  DriverApp({Key key}) : super(key: key);
 
   @override
-  _MyHomePage createState() {
-    return _MyHomePage();
+  _DriverAppPage createState() {
+    return _DriverAppPage();
   }
 
 }
 
-class _MyHomePage extends State<MyApp> {
+class _DriverAppPage extends State<DriverApp> {
   TextStyle styles = TextStyle(fontSize: 30, color: Colors.black);
   var _curIndex = 0;
   List<StatefulWidget> pageList = [Accept(), Task(), Order(), Mine()];
